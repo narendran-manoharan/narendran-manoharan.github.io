@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest identifier="_6IepulCxmR7" version="1.0" xmlns="http://www.imsproject.org/xsd/imscp_rootv1p1p2" xmlns:adlcp="http://www.adlnet.org/xsd/adlcp_rootv1p2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsproject.org/xsd/imscp_rootv1p1p2 imscp_rootv1p1p2.xsd http://www.imsglobal.org/xsd/imsmd_rootv1p2p1 imsmd_rootv1p2p1.xsd http://www.adlnet.org/xsd/adlcp_rootv1p2 adlcp_rootv1p2.xsd">
+  <metadata>
+    <schema>ADL SCORM</schema>
+    <schemaversion>1.2</schemaversion>
+    <lom xmlns="http://www.imsglobal.org/xsd/imsmd_rootv1p2p1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsglobal.org/xsd/imsmd_rootv1p2p1 imsmd_rootv1p2p1.xsd">
+      <general>
+        <title>
+          <langstring xml:lang="x-none">Machine Learning: An Introduction</langstring>
+        </title>
+      </general>
+      <lifecycle>
+        <version>
+          <langstring xml:lang="x-none">1</langstring>
+        </version>
+        <status>
+          <source>
+            <langstring xml:lang="x-none">LOMv1.0</langstring>
+          </source>
+          <value>
+            <langstring xml:lang="x-none">Final</langstring>
+          </value>
+        </status>
+      </lifecycle>
+      <metametadata>
+        <metadatascheme>ADL SCORM 1.2</metadatascheme>
+      </metametadata>
+      <educational>
+        <typicallearningtime>
+          <datetime>PT0H0M0S</datetime>
+        </typicallearningtime>
+      </educational>
+      <rights>
+        <cost>
+          <source>
+            <langstring xml:lang="x-none">LOMv1.0</langstring>
+          </source>
+          <value>
+            <langstring xml:lang="x-none">yes</langstring>
+          </value>
+        </cost>
+        <copyrightandotherrestrictions>
+          <source>
+            <langstring xml:lang="x-none">LOMv1.0</langstring>
+          </source>
+          <value>
+            <langstring xml:lang="x-none">yes</langstring>
+          </value>
+        </copyrightandotherrestrictions>
+      </rights>
+    </lom>
+  </metadata>
+  <organizations default="Machine_Learning:_An_Introduction_ORG">
+    <organization identifier="Machine_Learning:_An_Introduction_ORG">
+      <title>Machine Learning: An Introduction</title>
+      <item identifier="Machine_Learning:_An_Introduction_SCO" isvisible="true" identifierref="__6IepulCxmR7_RES">
+        <title>Machine Learning: An Introduction</title>
+      </item>
+    </organization>
+  </organizations>
+  <resources>
+    <resource identifier="__6IepulCxmR7_RES" type="webcontent" href="index_lms.html" adlcp:scormtype="sco">
+      <file href="story_content/thumbnail.jpg" />
+      <file href="mobile/5dVVdZDVR5f_P_0_62_2048_1151.jpg" />
+      <file href="story_content/5Ux2mRoxUDs_44100_48_0.mp3" />
+      <file href="mobile/6NIqHhYAL0C.png" />
+      <file href="mobile/6pRfj4C27Wu.png" />
+      <file href="story_content/5wlvHvu1FpS_44100_48_0.mp3" />
+      <file href="story_content/5yo7rFxTG3f_44100_48_0.mp3" />
+      <file href="mobile/6HGRbAOdIo9.png" />
+      <file href="story_content/6aAfjgS73YU_44100_48_0.mp3" />
+      <file href="mobile/6mbUQrGz2pR.png" />
+      <file href="story_content/6LZfnVDL2Ou_44100_48_0.mp3" />
+      <file href="mobile/6XwRmdsBTSp.png" />
+      <file href="story_content/6VLaUiq6Qo6_44100_48_0.mp3" />
+      <file href="mobile/6a72l18WEOE.png" />
+      <file href="story_content/6Dov1a3xjxq_44100_48_0.mp3" />
+      <file href="mobile/6OHXbvHjPT6.png" />
+      <file href="story_content/5p0ek2mVW4j_44100_48_0.mp3" />
+      <file href="mobile/62xQ6aj21E2.png" />
+      <file href="story_content/5i8QY0skV91_44100_48_0.mp3" />
+      <file href="mobile/68tVxWeCrGo.png" />
+      <file href="mobile/68tVxWeCrGo_B-30_RG.png" />
+      <file href="mobile/6IdxAfahPIJ.png" />
+      <file href="mobile/5oWrCr0rjFo.png" />
+      <file href="mobile/5oWrCr0rjFo_B-30_RG.png" />
+      <file href="mobile/62ZmGs6UZEd.png" />
+      <file href="mobile/62ZmGs6UZEd_B-30_RG.png" />
+      <file href="mobile/5ieL65YSJmE.png" />
+      <file href="mobile/5ieL65YSJmE_B-30_RG.png" />
+      <file href="mobile/6MYzkZbHvAV.png" />
+      <file href="mobile/6jzJaAAdW4N.png" />
+      <file href="mobile/6jzJaAAdW4N_B-30_RG.png" />
+      <file href="story_content/6RvGCaRumDB_44100_48_0.mp3" />
+      <file href="story_content/5dqwj7qNTFi_44100_48_0.mp3" />
+      <file href="meta.xml" />
+      <file href="story_content/triggers.js" />
+      <file href="story_content/user.js" />
+      <file href="mobile/Shape5gSY659jq3J.png" />
+      <file href="html5/data/css/output.min.css" />
+      <file href="html5/data/js/5l9x3MykXki.js" />
+      <file href="html5/data/js/5qvPKCgQBLf.js" />
+      <file href="html5/data/js/5XfCLLLCN9S.js" />
+      <file href="html5/data/js/6BU7s7jV8AY.js" />
+      <file href="html5/data/js/6LxxqdFFqXb.js" />
+      <file href="html5/data/js/6NtxaBhjS1w.js" />
+      <file href="html5/data/js/6YddiHofYjn.js" />
+      <file href="html5/data/js/data.js" />
+      <file href="html5/data/js/frame.js" />
+      <file href="html5/data/js/paths.js" />
+      <file href="html5/lib/scripts/bootstrapper.min.js" />
+      <file href="html5/lib/scripts/frame.desktop.min.js" />
+      <file href="html5/lib/scripts/frame.mobile.min.js" />
+      <file href="html5/lib/scripts/slides.min.js" />
+      <file href="html5/lib/stylesheets/desktop.min.css" />
+      <file href="html5/lib/stylesheets/mobile.min.css" />
+      <file href="html5/lib/stylesheets/mobile-fonts/open-sans-bold.woff" />
+      <file href="html5/lib/stylesheets/mobile-fonts/open-sans-light.woff" />
+      <file href="html5/lib/stylesheets/mobile-fonts/open-sans-regular.woff" />
+      <file href="analytics-frame.html" />
+      <file href="story.html" />
+      <file href="index_lms.html" />
+      <file href="lms/AICCComm.html" />
+      <file href="lms/blank.html" />
+      <file href="lms/browsersniff.js" />
+      <file href="lms/goodbye.html" />
+      <file href="lms/scormdriver.js" />
+    </resource>
+  </resources>
+</manifest>
