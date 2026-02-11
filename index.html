@@ -71,8 +71,86 @@
     }
 
     .intro {
-      margin-bottom: 40px;
-      padding: 0 var(--page-padding);  /* ADDED padding */
+      margin-bottom: 60px;
+      padding: 0 var(--page-padding);
+    }
+
+    .intro-grid {
+      display: grid;
+      grid-template-columns: 1fr 350px;
+      gap: 60px;
+      align-items: start;
+    }
+
+    .intro-content h1 {
+      font-size: clamp(2rem, 3vw, 2.5rem);
+      margin-bottom: 30px;
+      color: var(--text);
+    }
+
+    .info-box {
+      background: white;
+      border: 1px solid var(--card-border);
+      border-radius: var(--radius);
+      padding: 24px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    }
+
+    .box-header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 12px;
+    }
+
+    .section-icon {
+      width: 32px;
+      height: 32px;
+      object-fit: contain;
+    }
+
+    .info-box h2 {
+      margin: 0;
+      font-size: 1.25rem;
+      color: var(--primary);
+    }
+
+    .info-box p {
+      margin: 0;
+      line-height: 1.6;
+    }
+
+    .intro-cta {
+      margin-top: 24px;
+      font-size: 1.05rem;
+      font-weight: 500;
+      color: var(--text);
+    }
+
+    .intro-photo {
+      position: sticky;
+      top: 40px;
+    }
+
+    .intro-photo img {
+      width: 100%;
+      border-radius: var(--radius);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+    }
+
+    /* Responsive: stack on mobile */
+    @media (max-width: 768px) {
+      .intro-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+      }
+      
+      .intro-photo {
+        order: -1;
+        max-width: 300px;
+        margin: 0 auto;
+      }
     }
 
     .portfolio {
@@ -168,10 +246,35 @@
 <body>
     <!-- INTRODUCTION SECTION -->
     <section class="intro">
-        <h1>Hi, I'm Narendran Manoharan</h1>
-        <p>I break down complex information so people can actually use what they learn. My focus is simple: make learning relatable enough that it translates directly into action.
-          When learning works, people get up to speed faster, adapt to change more easily, and perform at their best. An enabled workforce means better business outcomes.
-          Below are examples of my work - from AI training for consultants to gamified budgeting for project teams.  </p>
+        <div class="intro-grid">
+            <div class="intro-content">
+                <h1>Hi, I'm Narendran Manoharan</h1>
+                
+                <!-- What I Do Box -->
+                <div class="info-box">
+                    <div class="box-header">
+                        <img src="images/icon-what-i-do.png" alt="What I Do Icon" class="section-icon">
+                        <h2>What I Do</h2>
+                    </div>
+                    <p>I break down complex information so people can actually use what they learn. My focus is simple: make learning relatable enough that it translates directly into action.</p>
+                </div>
+                
+                <!-- Why It Matters Box -->
+                <div class="info-box">
+                    <div class="box-header">
+                        <img src="images/icon-why-it-matters.png" alt="Why It Matters Icon" class="section-icon">
+                        <h2>Why It Matters</h2>
+                    </div>
+                    <p>When learning works, people get up to speed faster, adapt to change more easily, and perform at their best. An enabled workforce means better business outcomes.</p>
+                </div>
+                
+                <p class="intro-cta">Below are examples of my work - from AI training for consultants to gamified budgeting for project teams.</p>
+            </div>
+            
+            <div class="intro-photo">
+                <img src="images/profile-photo.jpg" alt="Narendran Manoharan">
+            </div>
+        </div>
     </section>
 
     <!-- PORTFOLIO SECTION -->
@@ -222,8 +325,5 @@
     <!-- CONTACT SECTION -->
     <section class="contact">
         <h2>Contact</h2>
-        <p>Email: narendran0890@gmail.com</p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/narendran-manoharan-11613884/">linkedin.com/in/narendran-manoharan</a></p>
-    </section>
-</body>
-</html>
+        <p>Email: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="b5dbd4c7d0dbd1c7d4db858d8c85f5d2d8d4dcd99bd6dad8">[email&#160;protected]</a></p>
+        <p>LinkedIn: <a href="https://
