@@ -131,12 +131,15 @@
     .intro-photo {
       position: sticky;
       top: 40px;
+      background: transparent; /* NO white background */
     }
 
     .intro-photo img {
       width: 100%;
-      border-radius: var(--radius);
+      border-radius: 50%; /* Makes it circular */
       box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+      background: transparent; /* NO white background */
+      display: block;
     }
 
     /* Responsive: stack on mobile */
@@ -147,9 +150,10 @@
       }
       
       .intro-photo {
-        order: -1;
-        max-width: 300px;
-        margin: 0 auto;
+        order: -1; /* Photo appears FIRST on mobile */
+        position: relative; /* Remove sticky on mobile */
+        max-width: 200px; /* SMALLER on mobile */
+        margin: 0 auto 20px; /* Center and add bottom margin */
       }
     }
 
@@ -253,7 +257,7 @@
                 <!-- What I Do Box -->
                 <div class="info-box">
                     <div class="box-header">
-                        <img src="images/what-i-do.png" alt="What I Do Icon" class="section-icon">
+                        <img src="images/icon-what-i-do.png" alt="What I Do Icon" class="section-icon">
                         <h2>What I Do</h2>
                     </div>
                     <p>I break down complex information so people can actually use what they learn. My focus is simple: make learning relatable enough that it translates directly into action.</p>
@@ -262,7 +266,7 @@
                 <!-- Why It Matters Box -->
                 <div class="info-box">
                     <div class="box-header">
-                        <img src="images/why-it-matters.png" alt="Why It Matters Icon" class="section-icon">
+                        <img src="images/icon-why-it-matters.png" alt="Why It Matters Icon" class="section-icon">
                         <h2>Why It Matters</h2>
                     </div>
                     <p>When learning works, people get up to speed faster, adapt to change more easily, and perform at their best. An enabled workforce means better business outcomes.</p>
@@ -272,7 +276,7 @@
             </div>
             
             <div class="intro-photo">
-                <img src="images/profile-picture.png" alt="Narendran Manoharan">
+                <img src="images/profile-photo.jpg" alt="Narendran Manoharan">
             </div>
         </div>
     </section>
