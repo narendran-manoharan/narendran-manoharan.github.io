@@ -12,11 +12,11 @@
 
   <style>
     :root {
-      /* Your chosen palette */
-      --primary: #0f766e;   /* Teal */
-      --accent: #5eead4;    /* Light teal for highlights */
-      --accent-2: #14b8a6;  /* Mid teal for gradients/hover */
-      --soft-bg: #ccfbf1;   /* Very light teal background */
+      /* Crimson & Burgundy palette */
+      --primary: #be123c;      /* Crimson */
+      --accent: #fda4af;       /* Light pink */
+      --accent-2: #e11d48;     /* Rose red */
+      --soft-bg: #ffe4e6;      /* Very light pink */
 
       /* Neutrals */
       --text: #0f172a;
@@ -24,7 +24,7 @@
       --card-border: #e5e7eb;
 
       /* Layout */
-      --page-padding: 28px;
+      --page-padding: 40px;    /* INCREASED from 28px */
       --radius: 14px;
     }
 
@@ -49,7 +49,7 @@
     .hero {
       background: linear-gradient(120deg, var(--primary), var(--accent-2));
       color: white;
-      padding: 84px var(--page-padding);
+      padding: 84px var(--page-padding);  /* INCREASED padding */
     }
 
     .hero-inner {
@@ -72,13 +72,47 @@
 
     .intro {
       margin-bottom: 40px;
+      padding: 0 var(--page-padding);  /* ADDED padding */
     }
 
     .portfolio {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      grid-template-columns: repeat(3, 1fr);  /* CHANGED to 3 columns */
       gap: 22px;
       margin-bottom: 40px;
+      padding: 0 var(--page-padding);  /* ADDED padding */
+    }
+
+    .portfolio h2 {
+      grid-column: 1/-1;
+    }
+
+    /* Make last 2 items center on second row */
+    .portfolio-item:nth-child(5),
+    .portfolio-item:nth-child(6) {
+      grid-column: span 1;
+    }
+
+    /* Center the last row if only 2 items */
+    .portfolio-item:nth-child(5) {
+      margin-left: auto;
+      margin-right: 11px;
+    }
+
+    .portfolio-item:nth-child(6) {
+      margin-left: 11px;
+      margin-right: auto;
+    }
+
+    /* Responsive: stack on mobile */
+    @media (max-width: 768px) {
+      .portfolio {
+        grid-template-columns: 1fr;
+      }
+      .portfolio-item:nth-child(5),
+      .portfolio-item:nth-child(6) {
+        margin: 0;
+      }
     }
 
     .portfolio-item {
@@ -127,15 +161,7 @@
       border: 1px solid var(--card-border);
       padding: 26px;
       border-radius: var(--radius);
-    }
-
-    /* Optional: subtle “callout” style for small highlights */
-    .callout {
-      background: var(--soft-bg);
-      border-left: 4px solid var(--primary);
-      padding: 14px 16px;
-      border-radius: 12px;
-      color: #064e3b;
+      margin: 0 var(--page-padding);  /* ADDED padding */
     }
   </style>
 </head>
@@ -148,7 +174,7 @@
 
     <!-- PORTFOLIO SECTION -->
     <section class="portfolio">
-        <h2 style="grid-column: 1/-1;">Portfolio</h2>
+        <h2>Portfolio</h2>
         
         <!-- Item 1 -->
         <div class="portfolio-item">
@@ -195,7 +221,7 @@
     <section class="contact">
         <h2>Contact</h2>
         <p>Email: narendran0890@gmail.com</p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/narendran-manoharan-11613884/">linkedin.com/in/yourprofile</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/narendran-manoharan-11613884/">linkedin.com/in/narendran-manoharan</a></p>
     </section>
 </body>
 </html>
